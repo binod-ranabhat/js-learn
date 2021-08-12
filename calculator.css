@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #deecf9;
+  margin: 0px;
+  font-family: Rubik;
+}
+nav {
+  background: #005a9e;
+  height: 100px;
+  padding: 0px 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topTitle {
+  font-family: Rubik;
+  font-size: 64px;
+  color: #ffffff;
+}
+.avatar > img {
+  width: 90px;
+}
+section {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.vector {
+  min-width: 100px;
+}
+
+.calculator {
+  margin: 20px 20px 0 0;
+  background: #005a9e;
+  border-radius: 10px;
+  min-width: 400px;
+  padding: 10px 10px 0 10px;
+  min-height: 400px;
+
+  display: grid;
+  gap: 0.1rem;
+
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  grid-template-rows: auto;
+  grid-template-areas:
+    "result result result result"
+    "ac c percent divide"
+    "seven eight nine product"
+    "four five six minus"
+    "one two three plus"
+    "zeroo zeroo dott equals";
+}
+
+.btn,
+.result {
+  background-color: #deecf9;
+  border: none;
+  color: #000;
+  min-width: 105px;
+  min-height: 70px;
+  font-size: 24px;
+  overflow: hidden;
+}
+.btn:hover {
+  background-color: #005a9e;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.result {
+  grid-area: result;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: flex-end;
+}
+.ac {
+  grid-area: ac;
+}
+.c {
+  grid-area: c;
+}
+.percent {
+  grid-area: percent;
+}
+.divide {
+  grid-area: divide;
+}
+.seven {
+  grid-area: seven;
+}
+.eight {
+  grid-area: eight;
+}
+.nine {
+  grid-area: nine;
+}
+.product {
+  grid-area: product;
+}
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: six;
+}
+.minus {
+  grid-area: minus;
+}
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.plus {
+  grid-area: plus;
+}
+.zeroo {
+  grid-area: zeroo;
+}
+.dott {
+  grid-area: dott;
+}
+.equals {
+  grid-area: equals;
+}
